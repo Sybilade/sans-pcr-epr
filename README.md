@@ -34,6 +34,20 @@ Navigate to the `notebooks/` directory to run analyses.
 
 ---
 
+## Continuous Integration (CI)
+
+This template includes a pre-configured GitHub Actions workflow in `.github/workflows/ci.yml`.
+
+### How it works:
+1. Every time you push code to `main` or open a Pull Request, GitHub automatically launches an online runner.
+2. The runner checks out your code, sets up Python, and installs dependencies.
+3. Once you start writing tests in the `tests/` directory:
+   - Open [.github/workflows/ci.yml](file:///.github/workflows/ci.yml).
+   - Uncomment the `# pytest` line at the bottom.
+4. GitHub will then run your test suite automatically on every push, showing a green checkmark next to your commit if all tests pass, or a red cross if something breaks.
+
+---
+
 ## Crucial Reminders for GitHub
 
 ### ⚠️ Never Commit Your Conda Environment Folders
