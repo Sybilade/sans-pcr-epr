@@ -1,0 +1,9 @@
+ipykernel
+numpy
+pandas
+kagglehub
+awscli
+duckdb
+openpyxl
+matplotlib
+seaborn
